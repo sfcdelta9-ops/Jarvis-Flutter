@@ -1,0 +1,49 @@
+name: jarvis_ai
+description: A real-time, Jarvis-style Voice AI Assistant.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Real-time communication (WebSocket for Gemini Live API)
+  web_socket_channel: ^2.4.5
+
+  # Runtime microphone permission handling
+  permission_handler: ^11.3.1
+
+  # Microphone input / audio recording
+  record: ^5.1.2
+
+  # Audio playback (for assistant voice responses)
+  audioplayers: ^6.1.0
+
+  # Real-time device battery readout for the sci-fi HUD
+  battery_plus: ^6.1.0
+
+  # Haptic feedback for state changes
+  vibration: ^1.9.0
+
+  # Hacker-style terminal typing effects
+  animated_text_kit: ^4.2.2
+
+  # Persistent foreground service (Jarvis Background Core)
+  flutter_background_service: ^5.0.10
+
+  # Foreground-service / system notifications
+  flutter_local_notifications: ^17.2.3
+
+  # Opening apps (YouTube, Google, WhatsApp...) for command execution
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
