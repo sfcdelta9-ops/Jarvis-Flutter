@@ -16,9 +16,9 @@ dependencies:
   # Runtime microphone permission handling
   permission_handler: ^11.3.1
 
-  # Microphone input / audio recording (latest 5.x fixes the platform
-  # interface mismatch with RecordLinux / startStream)
-  record: ^5.2.0
+  # Microphone input / audio recording (6.0 resolves the RecordLinux
+  # platform interface mismatch with startStream)
+  record: ^6.0.0
 
   # Audio playback (for assistant voice responses)
   audioplayers: ^6.1.0

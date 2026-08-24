@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
 
-// web_socket_channel 3.x exports IOWebSocketChannel from the main library.
+// web_socket_channel 3.x exports WebSocketChannel from the main library.
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 /// High-level state of the Jarvis voice core. The UI (orb + terminal)
@@ -68,7 +68,7 @@ class GeminiLiveService {
 
     _stateController.add(JarvisCoreState.connecting);
 
-    final channel = IOWebSocketChannel.connect(
+    final channel = WebSocketChannel.connect(
       Uri.parse(wsUrl),
       pingInterval: const Duration(seconds: 15),
     );
