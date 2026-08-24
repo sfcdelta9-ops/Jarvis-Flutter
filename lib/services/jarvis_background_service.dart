@@ -1,3 +1,7 @@
+// dart:ui provides DartPluginRegistrant, required to register Flutter
+// plugins inside this background isolate.
+import 'dart:ui';
+
 import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';

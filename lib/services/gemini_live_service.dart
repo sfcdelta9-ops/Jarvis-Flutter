@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:web_socket_channel/io.dart';
+// web_socket_channel 3.x exports IOWebSocketChannel from the main library.
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 /// High-level state of the Jarvis voice core. The UI (orb + terminal)
