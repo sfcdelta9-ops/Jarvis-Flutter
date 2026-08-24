@@ -26,8 +26,8 @@ dependencies:
   # Real-time device battery readout for the sci-fi HUD
   battery_plus: ^6.1.0
 
-  # Haptic feedback for state changes
-  vibration: ^1.9.0
+  # Haptic feedback (v3+ supports Android v2 embedding / removed Registrar class)
+  vibration: ^3.1.7
 
   # Hacker-style terminal typing effects
   animated_text_kit: ^4.2.2
