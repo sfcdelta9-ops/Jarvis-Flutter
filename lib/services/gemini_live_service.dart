@@ -70,7 +70,6 @@ class GeminiLiveService {
 
     final channel = WebSocketChannel.connect(
       Uri.parse(wsUrl),
-      pingInterval: const Duration(seconds: 15),
     );
     _channel = channel;
 
